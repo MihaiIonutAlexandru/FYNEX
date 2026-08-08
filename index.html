@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>FYNEX GmbH | Arbeitnehmerüberlassung</title>
 
-    <meta name="description"
-          content="FYNEX GmbH – Ihr Partner für Arbeitnehmerüberlassung und Personaldienstleistungen.">
+    <meta
+        name="description"
+        content="FYNEX GmbH – Ihr Partner für Arbeitnehmerüberlassung und Personaldienstleistungen."
+    >
 
     <style>
 
@@ -36,54 +40,69 @@
             text-align: center;
         }
 
+        /* LOGO */
+
         .logo {
             width: 1300px;
-            max-width: 1000%;
+            max-width: 100%;
             margin-bottom: 45px;
+            position: relative;
         }
 
-        .line {
-            width: 70px;
-            height: 3px;
-            background: #159cff;
-            margin: 0 auto 30px;
-        }
+
+
+        /* TITLU */
 
         h1 {
             font-size: 42px;
             font-weight: 700;
+
             margin-bottom: 20px;
         }
+
+        /* SUBTITLU */
 
         .subtitle {
             font-size: 21px;
             color: #159cff;
+
             font-weight: 600;
+
             margin-bottom: 20px;
         }
 
+        /* DESCRIERE */
+
         .description {
             max-width: 650px;
+
             margin: 0 auto 40px;
 
             font-size: 17px;
             line-height: 1.7;
+
             color: #bfc3c7;
         }
 
+        /* CONTACT */
+
         .contact {
             margin-top: 30px;
+
             padding-top: 30px;
+
             border-top: 1px solid #292d32;
         }
 
         .contact p {
             margin: 8px 0;
+
             color: #bfc3c7;
         }
 
         .contact a {
             color: white;
+
             text-decoration: none;
         }
 
@@ -91,15 +110,30 @@
             color: #159cff;
         }
 
-        .button {
-            display: inline-block;
+        /* BUTOANE */
+
+        .buttons {
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
 
             margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
 
             padding: 14px 30px;
 
             background: #159cff;
-            color: white;
+
+            color: white !important;
 
             text-decoration: none;
 
@@ -114,11 +148,28 @@
             background: #087dcc;
         }
 
+        /* WHATSAPP */
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .whatsapp:hover {
+            background: #1da851;
+        }
+
+        /* COPYRIGHT */
+
         .copyright {
             margin-top: 45px;
+
             color: #666;
+
             font-size: 13px;
         }
+
+
+        /* TELEFON */
 
         @media (max-width: 600px) {
 
@@ -137,82 +188,162 @@
             .logo {
                 width: 240px;
             }
+
+            .button {
+                width: 100%;
+            }
+
         }
 
     </style>
+
 </head>
+
 
 <body>
 
+
     <main class="container">
 
-        <!-- LOGO -->
+
+        <!-- =========================
+             LOGO
+        ========================== -->
+
         <img
             src="images/fynex-logo.png"
             alt="FYNEX GmbH"
             class="logo"
         >
 
-        <div class=""></div>
+
+        <!-- LINIE -->
+
+        <div class="line"></div>
+
+
+        <!-- =========================
+             TITLU
+        ========================== -->
 
         <h1>
-            
+          <!--  FYNEX GmbH -->
         </h1>
 
+
+        <!-- =========================
+             SUBTITLU
+        ========================== -->
+
         <div class="subtitle">
-            Arbeitnehmerüberlassung & Personaldienstleistungen
+            Arbeitnehmerüberlassung &amp; Personaldienstleistungen
         </div>
 
+
+        <!-- =========================
+             DESCRIERE
+        ========================== -->
+
         <p class="description">
+
             FYNEX GmbH verbindet qualifizierte Mitarbeiter
             mit Unternehmen und bietet zuverlässige,
             flexible Personallösungen für unterschiedliche
             Branchen und Einsatzbereiche.
+
         </p>
 
 
-        <!-- CONTACT -->
+        <!-- =========================
+             CONTACT
+        ========================== -->
 
         <div class="contact">
 
+
             <p>
-                <strong>FYNEX GmbH</strong>
+                <strong>
+                    FYNEX GmbH
+                </strong>
             </p>
 
-            <!-- HIER DEINE ADRESSE EINTRAGEN -->
+
+            <!-- ADRESA -->
+
             <p>
                 Aschendorf · 26871 Papenburg · Deutschland
             </p>
 
-            <!-- HIER TELEFON EINTRAGEN -->
+
+            <!-- TELEFON -->
+
             <p>
-                <a href="tel:+49 1512 9665971">
+
+                <a href="tel:+4915129665971">
+
                     +49 1512 9665971
+
                 </a>
+
             </p>
 
-            <!-- HIER E-MAIL EINTRAGEN -->
-            <p>
+
+            <!-- EMAIL -->
+
+            <!-- <p>
+
                 <a href="mailto:info@fynex-gmbh.de">
+
                     info@fynex-gmbh.de
+
                 </a>
+
             </p>
 
-            <a
-                href="mailto:info@fynex-gmbh.de"
-                class="button"
-            >
-                Kontakt aufnehmen
-            </a>
+
+            <!-- =========================
+                 BUTOANE
+            ========================== -->
+
+            <div class="buttons">
+
+
+                <!-- EMAIL -->
+
+
+
+
+                <!-- WHATSAPP -->
+
+                <a
+                    href="https://wa.me/4915129665971"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button whatsapp"
+                >
+                    WhatsApp
+                </a>
+
+
+            </div>
+
 
         </div>
 
+
+        <!-- =========================
+             COPYRIGHT
+        ========================== -->
 
         <div class="copyright">
+
             © 2026 FYNEX GmbH · Alle Rechte vorbehalten
+
         </div>
 
+
     </main>
+
 
 </body>
 </html>
