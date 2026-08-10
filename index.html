@@ -10,239 +10,275 @@
 
     <meta
         name="description"
-        content="FYNEX GmbH – Ihr Partner für Arbeitnehmerüberlassung und Personaldienstleistungen."
+        content="FYNEX GmbH – Arbeitnehmerüberlassung und Personaldienstleistungen."
     >
 
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #080a0d;
-            color: white;
-            min-height: 100vh;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            padding: 30px;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 850px;
-            text-align: center;
-        }
-
-        /* LOGO */
-
-        .logo {
-            width: 1300px;
-            max-width: 100%;
-            margin-bottom: 45px;
-            position: relative;
-        }
-
-
-
-        /* TITLU */
-
-        h1 {
-            font-size: 42px;
-            font-weight: 700;
-
-            margin-bottom: 20px;
-        }
-
-        /* SUBTITLU */
-
-        .subtitle {
-            font-size: 21px;
-            color: #159cff;
-
-            font-weight: 600;
-
-            margin-bottom: 20px;
-        }
-
-        /* DESCRIERE */
-
-        .description {
-            max-width: 650px;
-
-            margin: 0 auto 40px;
-
-            font-size: 17px;
-            line-height: 1.7;
-
-            color: #bfc3c7;
-        }
-
-        /* CONTACT */
-
-        .contact {
-            margin-top: 30px;
-
-            padding-top: 30px;
-
-            border-top: 1px solid #292d32;
-        }
-
-        .contact p {
-            margin: 8px 0;
-
-            color: #bfc3c7;
-        }
-
-        .contact a {
-            color: white;
-
-            text-decoration: none;
-        }
-
-        .contact a:hover {
-            color: #159cff;
-        }
-
-        /* BUTOANE */
-
-        .buttons {
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            gap: 12px;
-
-            flex-wrap: wrap;
-
-            margin-top: 30px;
-        }
-
-        .button {
-            display: inline-block;
-
-            padding: 14px 30px;
-
-            background: #159cff;
-
-            color: white !important;
-
-            text-decoration: none;
-
-            border-radius: 4px;
-
-            font-weight: 700;
-
-            transition: 0.3s;
-        }
-
-        .button:hover {
-            background: #087dcc;
-        }
-
-        /* WHATSAPP */
-
-        .whatsapp {
-            background: #25D366;
-        }
-
-        .whatsapp:hover {
-            background: #1da851;
-        }
-
-        /* COPYRIGHT */
-
-        .copyright {
-            margin-top: 45px;
-
-            color: #666;
-
-            font-size: 13px;
-        }
-
-
-        /* TELEFON */
-
-        @media (max-width: 600px) {
-
-            h1 {
-                font-size: 30px;
-            }
-
-            .subtitle {
-                font-size: 18px;
-            }
-
-            .description {
-                font-size: 15px;
-            }
-
-            .logo {
-                width: 240px;
-            }
-
-            .button {
-                width: 100%;
-            }
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
-
 
 <body>
 
 
-    <main class="container">
+<!-- =========================
+     HEADER
+========================= -->
 
+<header>
 
-        <!-- =========================
-             LOGO
-        ========================== -->
-
+    <!-- LOGO -->
+    <a href="#" class="logo">
         <img
-            src="images/fynex-logo.png"
+            src="images/header.png"
             alt="FYNEX GmbH"
-            class="logo"
         >
+    </a>
 
 
-        <!-- LINIE -->
+    <!-- JOBS BUTTON -->
+    <button
+        class="jobs-button"
+        id="jobsButton"
+        onclick="toggleJobs()"
+    >
 
-        <div class="line"></div>
+        <span class="menu-icon">
+            ☰
+        </span>
+
+        <span>
+            Jobs
+        </span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =========================
+     JOBS PANEL
+========================= -->
+
+<div
+    class="jobs-panel"
+    id="jobsPanel"
+>
+
+    <div class="jobs-content">
+
+        <div class="jobs-header">
+
+            <div>
+
+                <small>
+                    FYNEX GmbH
+                </small>
+
+                <h2>
+                    Aktuelle Jobs
+                </h2>
+
+            </div>
+
+            <button
+                class="close-button"
+                onclick="toggleJobs()"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <p class="jobs-intro">
+
+            Wir suchen motivierte und zuverlässige
+            Mitarbeiter für verschiedene Einsatzbereiche
+            bei unseren Kunden.
+
+        </p>
 
 
         <!-- =========================
-             TITLU
+             GESUCHTE MITARBEITER
         ========================== -->
+
+        <h3 class="jobs-title">
+            Wen wir suchen
+        </h3>
+
+
+        <div class="jobs-list">
+
+
+            <div class="job">
+
+                <div class="job-icon">
+                    W
+                </div>
+
+                <div>
+
+                    <h3>
+                        Schweißer (m/w/d)
+                    </h3>
+
+                    <p>
+                        WIG · MIG · MAG
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="job">
+
+                <div class="job-icon">
+                    M
+                </div>
+
+                <div>
+
+                    <h3>
+                        Metallbauer (m/w/d)
+                    </h3>
+
+                    <p>
+                        Metallverarbeitung · Konstruktion
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="job">
+
+                <div class="job-icon">
+                    R
+                </div>
+
+                <div>
+
+                    <h3>
+                        Rohrschlosser (m/w/d)
+                    </h3>
+
+                    <p>
+                        Rohrleitungsbau · Montage
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="job">
+
+                <div class="job-icon">
+                    I
+                </div>
+
+                <div>
+
+                    <h3>
+                        Industriemechaniker (m/w/d)
+                    </h3>
+
+                    <p>
+                        Montage · Instandhaltung
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="job">
+
+                <div class="job-icon">
+                    H
+                </div>
+
+                <div>
+
+                    <h3>
+                        Helfer / Produktionsmitarbeiter (m/w/d)
+                    </h3>
+
+                    <p>
+                        Produktion · Industrie · Montage
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             BEWERBUNG
+        ========================== -->
+
+        <div class="jobs-apply">
+
+            <h3>
+                Interesse an einem Job?
+            </h3>
+
+            <p>
+                Bewerben Sie sich direkt bei FYNEX GmbH.
+            </p>
+
+            <div class="apply-buttons">
+
+               <!-- <a
+                    href="mailto:info@fynex-gmbh.de"
+                    class="apply-email"
+                >
+                    Bewerbung per E-Mail
+               --> </a>
+
+
+                <a
+                    href="https://wa.me/4915129665971"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="apply-whatsapp"
+                >
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+    <div class="container">
 
         <h1>
-          <!--  FYNEX GmbH -->
+           <!-- FYNEX GmbH -->
         </h1>
 
-
-        <!-- =========================
-             SUBTITLU
-        ========================== -->
 
         <div class="subtitle">
             Arbeitnehmerüberlassung &amp; Personaldienstleistungen
         </div>
 
-
-        <!-- =========================
-             DESCRIERE
-        ========================== -->
 
         <p class="description">
 
@@ -260,7 +296,6 @@
 
         <div class="contact">
 
-
             <p>
                 <strong>
                     FYNEX GmbH
@@ -268,52 +303,38 @@
             </p>
 
 
-            <!-- ADRESA -->
-
             <p>
                 Aschendorf · 26871 Papenburg · Deutschland
             </p>
 
 
-            <!-- TELEFON -->
-
             <p>
 
                 <a href="tel:+4915129665971">
-
                     +49 1512 9665971
-
                 </a>
 
             </p>
 
-
-            <!-- EMAIL -->
-
-            <!-- <p>
+<!--
+            <p>
 
                 <a href="mailto:info@fynex-gmbh.de">
-
                     info@fynex-gmbh.de
-
                 </a>
 
             </p>
-
-
-            <!-- =========================
-                 BUTOANE
-            ========================== -->
+-->
 
             <div class="buttons">
 
+               <!-- <a
+                    href="mailto:info@fynex-gmbh.de"
+                    class="button"
+                >
+                    Kontakt aufnehmen
+               --> </a>
 
-                <!-- EMAIL -->
-
-
-
-
-                <!-- WHATSAPP -->
 
                 <a
                     href="https://wa.me/4915129665971"
@@ -324,16 +345,10 @@
                     WhatsApp
                 </a>
 
-
             </div>
-
 
         </div>
 
-
-        <!-- =========================
-             COPYRIGHT
-        ========================== -->
 
         <div class="copyright">
 
@@ -341,8 +356,27 @@
 
         </div>
 
+    </div>
 
-    </main>
+</main>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+    function toggleJobs() {
+
+        const panel = document.getElementById("jobsPanel");
+
+        panel.classList.toggle("active");
+
+    }
+
+</script>
 
 
 </body>
