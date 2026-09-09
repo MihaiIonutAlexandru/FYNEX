@@ -219,12 +219,12 @@ h2 span {
 }
 
 .btn-primary {
-  background: #ffffff;
+  background: #4aa8df;
   color: #000000;
 }
 
 .btn-primary:hover {
-  background: #d8d8d8;
+  background: #258dcc;
   transform: translateY(-2px);
 }
 
